@@ -15,6 +15,13 @@ const config: Config = {
       },
     },
   },
+  darkMode: [
+    "variant",
+    [
+      "@media (prefers-color-scheme: dark) { &:not(.light *) }",
+      "&:is(.dark *)",
+    ],
+  ],
   plugins: [],
 };
 export default config;
