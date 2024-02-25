@@ -4,7 +4,7 @@ import ProfilePic from "@/app/ui/profile-pic";
 export default async function Page() {
   return (
     <section>
-      <div className="block text-center mt-8 my-5">
+      <div className="block text-center mt-8 my-5 height-100vh pt-10 overflow-hidden relative">
         <h3 className="text-black text-2xl my-3">Hello, I am</h3>
         <h1 className="text-black text-4xl font-bold my-3">Michael Bashford</h1>
         <h3 className="text-black text-2xl italic my-3">
@@ -19,17 +19,17 @@ export default async function Page() {
           Let&apos;s Talk
         </button>
       </div>
-      <div className="grid grid-flow-row-dense grid-cols-6 grid-rows-1 content-around justify-center mx-4 my-10">
-        <div className="col-span-1"></div>
+      <div className="grid grid-flow-row-dense grid-cols-6 grid-rows-1 content-around justify-center mx-4 my-32 max-md:grid max-md:grid-flow-row-dense max-md:grid-cols-1 max-md:mx-2">
+        <div className="col-span-1 max-md:hidden"></div>
         <div className="col-span-3 flex items-center">
-          <p className=" text-black text-left mx-8 ">
+          <p className=" text-black text-left max-lg:mx-8 max-md:flex max-md:flex-col max-md:mt-10 max-md:items-center max-md:mx-4">
             Experienced UI/UX developer using JavaScript, TypeScript, AngularJS,
             React, Nextjs and Svelte. Developed thousands of layouts for users
             to enter data efficiently and readily able to automate for forms
             needed in their legal matters.
           </p>
         </div>
-        <div className="col-span-2">
+        <div className="max-lg:col-span-2 max-md:flex max-md:flex-col max-md:mt-10 max-md:items-center">
           <ProfilePic />
         </div>
       </div>
