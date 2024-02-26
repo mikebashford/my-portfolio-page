@@ -57,19 +57,33 @@ export default async function Projects() {
       <h5>My Recent Work</h5>
       <h2>Projects</h2>
 
-      <div className="container project__container">
+      <div className="grid grid-cols-3 gap-10 mx-32 my-24 justify-center max-md:grid-cols-1 max-md:mx-12">
         {data.map(({ id, image, title, github, demo }) => {
           return (
-            <article key={id} className="project__item">
-              <div className="project__item-image">
-                <Image src={image} alt={title} width={300} height={300} />
+            <article key={id} className="bg-blue-500 p-5 rounded-3xl border">
+              <div className="flex justify-center overflow-hidden mb-10">
+                <Image
+                  src={image}
+                  alt={title}
+                  width={450}
+                  height={450}
+                  className="rounded-3xl"
+                />
               </div>
-              <h3>{title}</h3>
-              <div className="project__item-cta">
-                <a href={github} className="btn" target="">
+              <h3 className="flex justify-center mb-10">{title}</h3>
+              <div className="flex flex-wrap gap-2 mb-4 justify-center">
+                <a
+                  href={github}
+                  className="bg-white hover:bg-blue-700 text-blue-500 hover:text-white font-bold py-2 px-4 rounded mx-5"
+                  target=""
+                >
                   Github
                 </a>
-                <a href={demo} className="btn btn-primary" target="">
+                <a
+                  href={demo}
+                  className="bg-blue-700 hover:bg-blue-900 text-white border border-blue-500 hover:text-white font-semibold py-2 px-4 rounded mx-5 mt"
+                  target=""
+                >
                   Live Demo
                 </a>
               </div>
