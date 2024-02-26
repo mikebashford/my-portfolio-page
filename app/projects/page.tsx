@@ -54,9 +54,6 @@ const data = [
 export default async function Projects() {
   return (
     <section id="projects">
-      <h5>My Recent Work</h5>
-      <h2>Projects</h2>
-
       <div className="grid grid-cols-3 gap-10 mx-32 my-24 justify-center max-md:grid-cols-1 max-md:mx-12">
         {data.map(({ id, image, title, github, demo }) => {
           return (

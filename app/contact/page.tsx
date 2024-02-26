@@ -1,6 +1,6 @@
 export default async function Experience() {
   return (
-    <div class="w-3/5 grid grid-cols-1 gap-2 my-5 self-center">
+    <div class="w-3/5 grid grid-cols-1 gap-2 my-5 self-center" id="contact">
       <div class="flex flex-col gap-4">
         <article class="bg-blue-500 p-5 rounded-xl text-center border">
           <h5>mikebashford&#64;gmail.com</h5>

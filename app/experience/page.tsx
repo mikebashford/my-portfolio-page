@@ -1,6 +1,9 @@
 export default async function Experience() {
   return (
-    <div class="grid grid-flow-col gap-8 mx-32 max-md:grid-flow-dense max-md:mx-8">
+    <div
+      class="grid grid-flow-col gap-8 mx-32 max-md:grid-flow-dense max-md:mx-12"
+      id="experience"
+    >
       <div class=" bg-blue-500 px-24 py-20 border rounded-3xl hover:bg-transparent hover:border-blue:700 hover:text-blue-500 text-center">
         <h3 className="text-center mb-8">Frontend Development</h3>
         <div class="grid grid-flow-dense grid-cols-2 gap-y-4 gap-x-4 max-md:gap-x-12">

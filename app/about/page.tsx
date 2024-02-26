@@ -12,12 +12,18 @@ export default async function Page() {
         </h3>
       </div>
       <div className="flex justify-center my-10">
-        <button className="bg-transparent hover:bg-blue-700 text-blue-500 border border-blue-500 hover:text-white font-semibold py-2 px-4 rounded mx-5">
+        <a
+          href="https://drive.google.com/file/d/1-b8T7XFgQFl6rcof7krz203Bv2Y25BdM/view?usp=drive_link"
+          className="bg-transparent hover:bg-blue-700 text-blue-500 border border-blue-500 hover:text-white font-semibold py-2 px-4 rounded mx-5"
+        >
           Download CV
-        </button>
-        <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mx-5">
+        </a>
+        <a
+          href="/contact"
+          className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mx-5"
+        >
           Let&apos;s Talk
-        </button>
+        </a>
       </div>
       <div className="grid grid-flow-row-dense grid-cols-6 grid-rows-1 content-around justify-center mx-4 my-32 max-md:grid max-md:grid-flow-row-dense max-md:grid-cols-1 max-md:mx-2">
         <div className="col-span-1 max-md:hidden"></div>
