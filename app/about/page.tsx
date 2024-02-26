@@ -19,7 +19,7 @@ export default async function Page() {
           Download CV
         </a>
         <a
-          href="/contact"
+          href="#contact"
           className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mx-5"
         >
           Let&apos;s Talk
