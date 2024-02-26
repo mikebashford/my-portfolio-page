@@ -1,39 +1,55 @@
 import { BsTwitter, BsGithub, BsLinkedin } from "react-icons/bs";
+import Link from "next/link";
 
 export default async function Footer() {
   return (
-    <footer>
-      <a href="/" className="footer__logo">
-        Mike Bashford
-      </a>
-      <ul className="permalinks">
+    <footer className="bg-blue-500 px-12 text-center mt-5">
+      <h1 className="my-8 inline-block font-bold text-4xl">Mike Bashford</h1>
+      <ul className="flex flex-wrap justify-center space-x-8 mb-8 max-md:flex max-md:flex-col max-md:gap-6 max-md:mt-5 max-md:space-x-0">
         <li>
-          <a href="/about">About</a>
+          <Link href="/about" className="hover:text-blue-700 ">
+            About
+          </Link>
         </li>
         <li>
-          <a href="/experience">Experience</a>
+          <Link href="/experience" className="hover:text-blue-700 ">
+            Experience
+          </Link>
         </li>
         <li>
-          <a href="/projects">Projects</a>
+          <Link href="/projects" className="hover:text-blue-700 ">
+            Projects
+          </Link>
         </li>
         <li>
-          <a href="/contact">Contact</a>
+          <Link href="/contact" className="hover:text-blue-700 ">
+            Contact
+          </Link>
         </li>
       </ul>
 
-      <div className="footer__socials">
-        <a href="https://twitter.com">
+      <div className="flex flex-wrap justify-center gap-4 mb-24">
+        <Link
+          href="https://twitter.com/mikebashford"
+          className="hover:text-blue-700 "
+        >
           <BsTwitter />
-        </a>
-        <a href="https://github.com">
+        </Link>
+        <Link
+          href="https://github.com/mikebashford"
+          className="hover:text-blue-700 "
+        >
           <BsGithub />
-        </a>
-        <a href="https://linkedin.com">
+        </Link>
+        <Link
+          href="https://linkedin.com/in/mikebashford"
+          className="hover:text-blue-700 "
+        >
           <BsLinkedin />
-        </a>
+        </Link>
       </div>
 
-      <div className="footer__copyright">
+      <div className="mb-12">
         <small>&copy; Michael Bashford. All rights reserved.</small>
       </div>
     </footer>
