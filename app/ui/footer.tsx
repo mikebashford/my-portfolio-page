@@ -1,7 +1,8 @@
+"use client";
 import { BsTwitter, BsGithub, BsLinkedin } from "react-icons/bs";
 import Link from "next/link";
 
-export default async function Footer() {
+export default function Footer() {
   return (
     <footer className="bg-blue-500 px-12 text-center mt-5">
       <h1 className="my-8 inline-block font-bold text-4xl">Mike Bashford</h1>

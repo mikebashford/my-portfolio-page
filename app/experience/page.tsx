@@ -1,4 +1,5 @@
-export default async function Experience() {
+"use client";
+export default function Experience() {
   return (
     <div
       className="grid grid-flow-col gap-8 mx-32 max-md:grid-flow-dense max-md:mx-12"

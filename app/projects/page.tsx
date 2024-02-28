@@ -1,3 +1,5 @@
+"use client";
+
 import Image from "next/image";
 import IMG1 from "@/public/images/DeadSiege_New_Logo.png";
 import IMG2 from "@/public//images/group-project.herokuapp.com.png";
@@ -51,7 +53,7 @@ const data = [
   },
 ];
 
-export default async function Projects() {
+export default function Projects() {
   return (
     <section id="projects">
       <div className="grid grid-cols-3 gap-10 mx-32 my-24 justify-center max-md:grid-cols-1 max-md:mx-12">

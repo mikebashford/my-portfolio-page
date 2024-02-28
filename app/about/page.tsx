@@ -1,7 +1,8 @@
+"use client";
 import Image from "next/image";
 import ProfilePic from "@/app/ui/profile-pic";
 
-export default async function Page() {
+export default function Page() {
   return (
     <section>
       <div className="block text-center mt-8 my-5 height-100vh pt-10 overflow-hidden relative">
@@ -29,10 +30,10 @@ export default async function Page() {
         <div className="col-span-1 max-md:hidden"></div>
         <div className="col-span-3 flex items-center">
           <p className=" text-black text-left max-lg:mx-8 max-md:flex max-md:flex-col max-md:mt-10 max-md:items-center max-md:mx-4">
-            Experienced UI/UX developer using JavaScript, TypeScript, AngularJS,
-            React, Nextjs and Svelte. Developed thousands of layouts for users
-            to enter data efficiently and readily able to automate for forms
-            needed in their legal matters.
+            Experienced UI/UX developer using JavaScript, TypeScript, Angular,
+            React, and Nextjs. Developed thousands of layouts for users to enter
+            data efficiently and readily able to automate for forms needed in
+            their legal matters.
           </p>
         </div>
         <div className="max-lg:col-span-2 max-md:flex max-md:flex-col max-md:mt-10 max-md:items-center">
