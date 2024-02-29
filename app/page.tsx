@@ -14,9 +14,6 @@ export default function Home() {
     <main className="flex flex-col bg-white w-screen">
       <Navbar />
       <About />
-      {/* <Experience />
-      <Projects />
-      <Contact /> */}
       <Footer />
     </main>
   );

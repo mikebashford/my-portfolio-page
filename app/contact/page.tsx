@@ -6,13 +6,10 @@ export default async function Experience() {
     <main className="flex flex-col bg-white w-screen">
       <Navbar />
       <div
-        className="w-3/5 grid grid-cols-1 gap-2 my-5 self-center"
+        className="w-3/5 grid grid-cols-1 gap-2 my-24 self-center border rounded-xl p-24 bg-blue-500"
         id="contact"
       >
         <div className="flex flex-col gap-4">
-          <article className="bg-blue-500 p-5 rounded-xl text-center border">
-            <h5>mikebashford&#64;gmail.com</h5>
-          </article>
           <form className="flex flex-col gap-4">
             <input
               type="text"
@@ -36,7 +33,7 @@ export default async function Experience() {
             ></textarea>
             <button
               type="submit"
-              className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mx-5"
+              className="bg-blue-700 hover:bg-blue-900 text-white font-bold py-2 px-4 rounded mx-5 w-1/2 self-center"
             >
               Send Message
             </button>

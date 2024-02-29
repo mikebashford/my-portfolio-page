@@ -1,5 +1,6 @@
 import Navbar from "@/app/ui/navbar";
 import Footer from "@/app/ui/footer";
+
 export default function Experience() {
   return (
     <main className="flex flex-col bg-white w-screen">

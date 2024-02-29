@@ -1,4 +1,3 @@
-"use client";
 import { BsTwitter, BsGithub, BsLinkedin } from "react-icons/bs";
 import Link from "next/link";
 
