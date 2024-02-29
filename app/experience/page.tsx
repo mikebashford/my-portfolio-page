@@ -11,7 +11,7 @@ export default function Experience() {
       >
         <div className=" bg-blue-500 px-24 py-20 border rounded-3xl hover:bg-transparent hover:border-blue:700 hover:text-blue-500 text-center">
           <h3 className="text-center mb-8">Frontend Development</h3>
-          <div className="grid grid-flow-dense grid-cols-2 gap-y-4 gap-x-4 max-md:gap-x-12">
+          <div className="grid grid-flow-dense grid-cols-2 gap-y-4 gap-x-4 max-md:gap-x-12 max-md:flex max-md:flex-wrap max-md:justify-center">
             <article className="col-span-1">
               <div>
                 <h5>HTML</h5>
