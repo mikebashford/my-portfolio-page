@@ -6,7 +6,7 @@ import {
   AiOutlineMessage,
 } from "react-icons/ai";
 import { RiMacbookLine } from "react-icons/ri";
-import ThemeSwitcher from "./ThemeSwitcher";
+import ThemeSwitcher from "./themeSwitcher";
 
 export default function Navbar() {
   return (
