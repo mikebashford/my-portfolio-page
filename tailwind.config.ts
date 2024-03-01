@@ -22,13 +22,7 @@ const config: Config = {
       "2xl": "5140px",
     },
   },
-  darkMode: [
-    "variant",
-    [
-      "@media (prefers-color-scheme: dark) { &:not(.light *) }",
-      "&:is(.dark *)",
-    ],
-  ],
   plugins: [],
+  darkMode: "class",
 };
 export default config;

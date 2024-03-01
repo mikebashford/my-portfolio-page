@@ -5,8 +5,6 @@ import IMG3 from "@/public//images/OneStopShop.png";
 import IMG4 from "@/public//images/personal-crypto-tracker.png";
 import IMG5 from "@/public//images/RunBuddy.png";
 import IMG6 from "@//public/images/budget-tracker.png";
-import Navbar from "@/app/ui/navbar";
-import Footer from "@/app/ui/footer";
 
 const data = [
   {
@@ -55,8 +53,7 @@ const data = [
 
 export default function Projects() {
   return (
-    <main className="flex flex-col bg-white w-screen">
-      <Navbar />
+    <main className="flex flex-col text-white w-screen">
       <section id="projects">
         <div className="grid grid-cols-3 gap-10 mx-32 my-24 justify-center max-md:grid-cols-1 max-md:mx-12">
           {data.map(({ id, image, title, github, demo }) => {
@@ -93,7 +90,6 @@ export default function Projects() {
           })}
         </div>
       </section>
-      <Footer />
     </main>
   );
 }

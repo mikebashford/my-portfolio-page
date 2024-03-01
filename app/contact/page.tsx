@@ -1,10 +1,6 @@
-import Navbar from "@/app/ui/navbar";
-import Footer from "@/app/ui/footer";
-
 export default async function Experience() {
   return (
-    <main className="flex flex-col bg-white w-screen">
-      <Navbar />
+    <main className="flex flex-col text-white w-screen">
       <div
         className="w-3/5 grid grid-cols-1 gap-2 my-24 self-center border rounded-xl p-24 bg-blue-500 max-md:w-10/12 max-md:p-12"
         id="contact"
@@ -40,7 +36,6 @@ export default async function Experience() {
           </form>
         </div>
       </div>
-      <Footer />
     </main>
   );
 }

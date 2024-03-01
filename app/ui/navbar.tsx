@@ -6,10 +6,11 @@ import {
   AiOutlineMessage,
 } from "react-icons/ai";
 import { RiMacbookLine } from "react-icons/ri";
+import ThemeSwitcher from "./ThemeSwitcher";
 
 export default function Navbar() {
   return (
-    <nav className="w-screen flex xl:max-2xl:flex-wrap px-2 py-6 z-2 justify-end gap-3 backdrop-filter bg-blue-500 max-md:flex max-md:flex-col max-md:justify-center max-md: items-center">
+    <nav className="w-screen text-white flex xl:max-2xl:flex-wrap px-12 py-6 z-2 justify-end gap-3 backdrop-filter bg-blue-500 max-md:flex max-md:flex-col max-md:justify-center max-md: items-center">
       <Link
         href={"/"}
         className="flex xl:max-2xl:flex-wrap py-2 px-4 hover:text-blue-700 font-semibold max-md:flex max-md:flex-col max-md:justify-center"
@@ -38,6 +39,7 @@ export default function Navbar() {
         <AiOutlineMessage className="mx-1 mt-1 max-lg:self-center" />
         Contact Me
       </Link>
+      <ThemeSwitcher />
     </nav>
   );
 }

@@ -6,7 +6,7 @@ export default function ProfilePic() {
   return (
     <div className="flex flex-row items-center">
       <Image
-        className="rounded-2xl inline-block overflow-hidden px-2"
+        className="rounded-2xl inline-block border overflow-hidden"
         src={profilePic}
         alt="A photo of myself"
         width={300}

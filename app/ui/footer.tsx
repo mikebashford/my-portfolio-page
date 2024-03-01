@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <footer className="bg-blue-500 px-12 text-center mt-5">
+    <footer className="bg-blue-500 px-12 text-center text-white">
       <h1 className="my-8 inline-block font-bold text-4xl">Mike Bashford</h1>
       <ul className="flex flex-wrap justify-center space-x-8 mb-8 max-md:flex max-md:flex-col max-md:gap-6 max-md:mt-5 max-md:space-x-0">
         <li>
@@ -49,7 +49,7 @@ export default function Footer() {
         </Link>
       </div>
 
-      <div className="mb-12">
+      <div className="">
         <small>&copy; Michael Bashford. All rights reserved.</small>
       </div>
     </footer>
