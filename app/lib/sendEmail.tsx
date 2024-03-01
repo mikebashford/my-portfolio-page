@@ -1,5 +1,6 @@
 "use server";
 
+import React from "react";
 import { Resend } from "resend";
 import ContactFormEmail from "@/app/lib/contactFormEmail";
 
