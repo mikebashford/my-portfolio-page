@@ -1,6 +1,7 @@
 "use client";
-import { sendEmail } from "@/app/lib/sendEmail";
+import React from "react";
 import SubmitButton from "@/app/ui/submitButton";
+import { sendEmail } from "@/app/lib/sendEmail";
 
 export default function Experience() {
   return (
@@ -19,7 +20,6 @@ export default function Experience() {
                 alert(error);
                 return;
               }
-
               alert("Email sent!");
             }}
           >
@@ -28,6 +28,7 @@ export default function Experience() {
               name="name"
               placeholder="Your Full Name"
               required
+              maxLength={300}
               className="w-full p-6 border rounded-xl bg-transparent resize-none bg-white"
             />
             <input
@@ -35,16 +36,18 @@ export default function Experience() {
               name="email"
               placeholder="Your Email"
               required
+              maxLength={300}
               className="w-full p-6 border rounded-xl bg-transparent resize-none bg-white"
             />
             <textarea
               name="message"
               placeholder="Your Message"
               required
-              className="w-full p-6 border rounded-xl bg-transparent resize-none bg-white"
+              maxLength={500}
+              className="w-full h-40 p-6 border rounded-xl bg-transparent resize-none bg-white"
             ></textarea>
+            <SubmitButton />
           </form>
-          <SubmitButton />
         </div>
       </div>
     </div>
