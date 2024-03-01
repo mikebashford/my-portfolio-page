@@ -1,6 +1,6 @@
 export default function Experience() {
   return (
-    <main className="flex flex-col w-screen my-8 text-white">
+    <main className="flex flex-col w-screen my-24 text-white">
       <div
         className="grid grid-flow-col gap-8 mx-32 my-24 max-md:grid-flow-dense max-md:mx-12"
         id="experience"
