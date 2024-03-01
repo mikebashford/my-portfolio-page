@@ -4,7 +4,6 @@ import React from "react";
 import { Resend } from "resend";
 import ContactFormEmail from "@/app/lib/contactFormEmail";
 import { validateString, getErrorMessage } from "@/app/lib/utils";
-import _instanceof from "./../../.next/server/vendor-chunks/@react-email";
 
 const resend = new Resend(process.env.RESEND_API_KEY);
 
