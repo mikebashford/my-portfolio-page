@@ -5,9 +5,14 @@ export default function SubmitButton() {
   return (
     <button
       type="submit"
-      className="bg-blue-700 hover:bg-blue-900 text-white font-bold py-2 px-4 rounded mx-5 w-1/2 self-center max-md:w-3/4"
+      className="flex bg-blue-700 hover:bg-blue-900 text-white font-bold py-2 px-4 rounded mx-5 w-1/3 items-center self-center justify-center max-md:w-3/4 disabled:bg-opacity-65"
+      disabled={pending}
     >
-      Send Message
+      {pending ? (
+        <div className="h-5 w-5 animate-spin rounded-full border-b-2 border-white "></div>
+      ) : (
+        <>Send Message </>
+      )}
     </button>
   );
 }

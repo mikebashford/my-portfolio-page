@@ -1,7 +1,8 @@
 "use client";
-import React from "react";
+import React, { useEffect } from "react";
 import SubmitButton from "@/app/ui/submitButton";
 import { sendEmail } from "@/app/lib/sendEmail";
+import toast from "react-hot-toast";
 
 export default function Experience() {
   return (
@@ -17,10 +18,10 @@ export default function Experience() {
               const { data, error } = await sendEmail(formData);
 
               if (error) {
-                alert(error);
+                toast.error(error);
                 return;
               }
-              alert("Email sent!");
+              toast.success("Email sent!");
             }}
           >
             <input

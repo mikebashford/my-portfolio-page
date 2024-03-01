@@ -3,7 +3,8 @@
 import React from "react";
 import { Resend } from "resend";
 import ContactFormEmail from "@/app/lib/contactFormEmail";
-import { validateString } from "@/app/lib/validateString";
+import { validateString, getErrorMessage } from "@/app/lib/utils";
+import _instanceof from "./../../.next/server/vendor-chunks/@react-email";
 
 const resend = new Resend(process.env.RESEND_API_KEY);
 
@@ -25,7 +26,7 @@ export const sendEmail = async (formData: FormData) => {
 
   let data;
   try {
-    data = resend.emails.send({
+    data = await resend.emails.send({
       from: "Contact Form <mike@mikebashford.com>",
       to: ["mikebashford@gmail.com"],
       subject: "Message from contact form",
@@ -37,7 +38,7 @@ export const sendEmail = async (formData: FormData) => {
     });
   } catch (error: unknown) {
     return {
-      error: console.log(error),
+      error: getErrorMessage(error),
     };
   }
 
