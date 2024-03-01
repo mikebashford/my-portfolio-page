@@ -6,6 +6,7 @@ import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Providers } from "./providers";
 import Navbar from "@/app/ui/navbar";
 import Footer from "@/app/ui/footer";
+import { Toaster } from "react-hot-toast";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -22,6 +23,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body className={"`{inter.className}` dark:bg-black"}>
+        <Toaster position="bottom-right" toastOptions={{ duration: 3000 }} />
         <Providers>
           <Navbar />
           <main>{children}</main>

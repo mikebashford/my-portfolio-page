@@ -53,8 +53,8 @@ const data = [
 
 export default function Projects() {
   return (
-    <main className="flex flex-col text-white w-screen">
-      <section id="projects">
+    <div className="flex flex-col text-white w-screen">
+      <div id="projects">
         <div className="grid grid-cols-3 gap-10 mx-32 my-24 justify-center max-md:grid-cols-1 max-md:mx-12">
           {data.map(({ id, image, title, github, demo }) => {
             return (
@@ -89,7 +89,7 @@ export default function Projects() {
             );
           })}
         </div>
-      </section>
-    </main>
+      </div>
+    </div>
   );
 }

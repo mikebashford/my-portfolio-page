@@ -4,7 +4,7 @@ import ProfilePic from "@/app/ui/profile-pic";
 
 export default function Page() {
   return (
-    <section className="dark:text-white light:text-black">
+    <div className="dark:text-white light:text-black">
       <div className="block text-center mt-8 my-5 height-100vh pt-10 overflow-hidden relative">
         <h3 className="text-2xl my-3">Hello, I am</h3>
         <h1 className="text-4xl font-bold my-3">Michael Bashford</h1>
@@ -38,6 +38,6 @@ export default function Page() {
           <ProfilePic />
         </div>
       </div>
-    </section>
+    </div>
   );
 }
