@@ -53,9 +53,9 @@ const data = [
 
 export default function Projects() {
   return (
-    <div className="flex flex-col text-white w-screen">
+    <div className="flex flex-col text-white">
       <div id="projects">
-        <div className="grid grid-cols-3 gap-10 mx-32 my-24 justify-center max-md:grid-cols-1 max-md:mx-12">
+        <div className="grid max-xl:grid-cols-3 max-2xl:grid-cols-6 gap-10 mx-32 my-24 justify-center max-lg:grid-cols-1 max-lg:mx-12">
           {data.map(({ id, image, title, github, demo }) => {
             return (
               <article key={id} className="bg-blue-500 p-5 rounded-3xl border">

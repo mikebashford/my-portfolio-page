@@ -4,11 +4,11 @@ import SubmitButton from "@/app/ui/submitButton";
 import { sendEmail } from "@/app/lib/sendEmail";
 import toast from "react-hot-toast";
 
-export default function Experience() {
+export default function Contact() {
   return (
-    <div className="flex flex-col text-black w-screen">
+    <div className="flex flex-col text-black">
       <div
-        className="w-3/5 grid grid-cols-1 gap-2 my-24 self-center border rounded-xl p-24 bg-blue-500 max-md:w-10/12 max-md:p-12"
+        className="max-xl:w-3/5 grid grid-cols-1 gap-2 my-24 self-center border rounded-xl p-24 bg-blue-500 max-lg:w-10/12 max-lg:p-12 max-2xl:w-1/3"
         id="contact"
       >
         <div className="flex flex-col gap-4">

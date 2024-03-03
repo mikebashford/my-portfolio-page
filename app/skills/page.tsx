@@ -2,8 +2,8 @@ import Image from "next/image";
 
 export default function Skills() {
   return (
-    <div className="flex flex-col w-screen my-24 text-white">
-      <div className="flex flex-wrap items-center justify-center gap-32 max-lg:mx-8">
+    <div className="flex flex-col my-24 text-white">
+      <div className="flex flex-wrap items-center justify-center max-xl:gap-32 max-xl:mx-8 max-2xl:gap-64">
         <div className="bg-blue-500 px-24 py-20 border rounded-3xl hover:border-blue:700 text-center max-lg:px-12 max-lg:py-16">
           <h3 className="text-center mb-8 text-xl max-lg:text-3xl">
             Frontend Development
