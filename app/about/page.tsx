@@ -24,17 +24,18 @@ export default function Page() {
           Let&apos;s Talk
         </a>
       </div>
-      <div className="grid grid-flow-row-dense grid-cols-6 grid-rows-1 content-around justify-center mx-4 my-32 max-md:grid max-md:grid-flow-row-dense max-md:grid-cols-1 max-md:mx-2">
-        <div className="col-span-1 max-md:hidden"></div>
-        <div className="col-span-3 flex items-center">
-          <p className="text-left max-lg:mx-8 max-md:flex max-md:flex-col max-md:mt-10 max-md:items-center max-md:mx-4">
-            Experienced UI/UX developer using JavaScript, TypeScript, Angular,
-            React, and Nextjs. Developed thousands of layouts for users to enter
-            data efficiently and readily able to automate for forms needed in
-            their legal matters.
+      <div className="grid grid-flow-row-dense grid-cols-6 grid-rows-1 content-around justify-center mx-4 my-32 max-lg:grid max-lg:grid-flow-row-dense max-lg:grid-cols-1 max-lg:mx-2">
+        <div className="col-span-1 max-lg:hidden"></div>
+        <div className="col-span-3 flex items-center mx-12">
+          <p className="text-left max-lg:mx-24 max-lg:flex max-lg:flex-col max-lg:m-10 max-lg:items-center">
+            I&apos;m a passionate developer with a knack for building
+            user-centric web applications. My background has instilled a strong
+            focus on efficiency and a love for crafting engaging experiences. I
+            leverage this blend to translate complex ideas into intuitive and
+            delightful user interfaces.
           </p>
         </div>
-        <div className="max-lg:col-span-2 max-md:flex max-md:flex-col max-md:mt-10 max-md:items-center">
+        <div className="max-lg:col-span-2 max-lg:flex max-lg:flex-col max-lg:mt-10 max-lg:items-center">
           <ProfilePic />
         </div>
       </div>
