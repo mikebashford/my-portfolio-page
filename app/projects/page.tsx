@@ -2,16 +2,13 @@ import Image from "next/image";
 import IMG1 from "@/public/images/DeadSiege_New_Logo.png";
 import IMG2 from "@/public//images/group-project.herokuapp.com.png";
 import IMG3 from "@/public//images/OneStopShop.png";
-import IMG4 from "@/public//images/personal-crypto-tracker.png";
-import IMG5 from "@/public//images/RunBuddy.png";
-import IMG6 from "@//public/images/budget-tracker.png";
 
 const data = [
   {
     id: 1,
     image: IMG1,
     title: "Dead Siege",
-    github: "https://github.com",
+    github: "https://gamejolt.com/games/dead-siege/114865",
     demo: "https://gamejolt.com/games/dead-siege/114865",
   },
   {
@@ -28,33 +25,15 @@ const data = [
     github: "https://github.com/brenhamp/one-stop-shop",
     demo: "",
   },
-  {
-    id: 4,
-    image: IMG4,
-    title: "Personal Crypto Tracker",
-    github: "https://github.com/mikebashford/personal-crypto-tracker",
-    demo: "https://mikebashford.github.io/personal-crypto-tracker/",
-  },
-  {
-    id: 5,
-    image: IMG5,
-    title: "Run Buddy",
-    github: "https://github.com/mikebashford/run-buddy",
-    demo: "https://mikebashford.github.io/run-buddy/",
-  },
-  {
-    id: 6,
-    image: IMG6,
-    title: "Budget Tracker",
-    github: "https://github.com/mikebashford/budget-tracker",
-    demo: "",
-  },
 ];
 
 export default function Projects() {
   return (
     <div className="flex flex-col text-white">
       <div id="projects">
+        <div className="flex text-black justify-center my-10 text-4xl">
+          New Projects in the works!
+        </div>
         <div className="grid max-2xl:grid-cols-3 max-3xl:grid-cols-6 gap-10 mx-32 my-24 justify-center max-lg:grid-cols-1 max-lg:mx-12">
           {data.map(({ id, image, title, github, demo }) => {
             return (
@@ -77,13 +56,13 @@ export default function Projects() {
                   >
                     Github
                   </a>
-                  <a
+                  {/* <a
                     href={demo}
                     className="bg-blue-700 hover:bg-blue-900 text-white border border-blue-500 hover:text-white font-semibold py-2 px-4 rounded mx-5 mt"
                     target=""
                   >
                     Live Demo
-                  </a>
+                  </a> */}
                 </div>
               </article>
             );
