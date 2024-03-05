@@ -8,7 +8,6 @@ const data = [
     id: 1,
     image: IMG1,
     title: "Dead Siege",
-    github: "https://gamejolt.com/games/dead-siege/114865",
     demo: "https://gamejolt.com/games/dead-siege/114865",
   },
   {
@@ -21,9 +20,9 @@ const data = [
   {
     id: 3,
     image: IMG3,
-    title: "One Stop Shop",
-    github: "https://github.com/brenhamp/one-stop-shop",
-    demo: "",
+    title: "One Stop Grocer",
+    github: "https://github.com/mikebashford/one-stop-groceries",
+    demo: "https://one-stop-grocer.vercel.app/",
   },
 ];
 
@@ -56,13 +55,13 @@ export default function Projects() {
                   >
                     Github
                   </a>
-                  {/* <a
+                  <a
                     href={demo}
                     className="bg-blue-700 hover:bg-blue-900 text-white border border-blue-500 hover:text-white font-semibold py-2 px-4 rounded mx-5 mt"
                     target=""
                   >
                     Live Demo
-                  </a> */}
+                  </a>
                 </div>
               </article>
             );
