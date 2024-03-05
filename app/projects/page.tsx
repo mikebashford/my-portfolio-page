@@ -1,7 +1,7 @@
 import Image from "next/image";
 import IMG1 from "@/public/images/DeadSiege_New_Logo.png";
 import IMG2 from "@/public//images/group-project.herokuapp.com.png";
-import IMG3 from "@/public//images/OneStopShop.png";
+import IMG3 from "@/public//images/OneStopGrocer.png";
 
 const data = [
   {
