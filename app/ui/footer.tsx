@@ -12,8 +12,8 @@ export default function Footer() {
           </Link>
         </li>
         <li>
-          <Link href="/experience" className="hover:text-blue-700 ">
-            Experience
+          <Link href="/skills" className="hover:text-blue-700 ">
+            Skills
           </Link>
         </li>
         <li>
