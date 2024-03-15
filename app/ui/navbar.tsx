@@ -7,7 +7,7 @@ import {
 } from "react-icons/ai";
 import { RiMacbookLine } from "react-icons/ri";
 import ThemeSwitcher from "./themeSwitcher";
-import { favicon } from "@/public/images/favicon.ico";
+import favicon from "@/public/images/favicon.ico";
 import Image from "next/image";
 
 export default function Navbar() {
