@@ -1,42 +1,33 @@
 import Image from "next/image";
-import IMG1 from "@/public/images/DeadSiege_New_Logo.png";
-import IMG2 from "@/public//images/group-project.herokuapp.com.png";
 import IMG3 from "@/public//images/OneStopGrocer.png";
+import Link from "next/link";
 
 const data = [
-  {
-    id: 1,
-    image: IMG1,
-    title: "Dead Siege",
-    demo: "https://gamejolt.com/games/dead-siege/114865",
-  },
-  {
-    id: 2,
-    image: IMG2,
-    title: "Parachute Play",
-    github: "https://github.com/jessebubble/parachute-play",
-    demo: "",
-  },
   {
     id: 3,
     image: IMG3,
     title: "One Stop Grocer",
-    github: "https://github.com/mikebashford/one-stop-groceries",
     demo: "https://one-stop-grocer.vercel.app/",
   },
 ];
 
 export default function Projects() {
   return (
-    <div className="flex flex-col text-white">
-      <div id="projects">
-        <div className="flex text-black justify-center my-10 text-4xl">
-          New Projects in the works!
-        </div>
-        <div className="grid max-2xl:grid-cols-3 max-3xl:grid-cols-6 gap-10 mx-32 my-24 justify-center max-lg:grid-cols-1 max-lg:mx-12">
+    <section
+      className="my-24 width-5/5  dark:text-white light:text-black"
+      id="projects"
+    >
+      <div className="w-full">
+        <h1 className="flex justify-center font-bold text-5xl mb-10">
+          Projects
+        </h1>
+        <div className="flex my-8 justify-center gap-4">
           {data.map(({ id, image, title, github, demo }) => {
             return (
-              <article key={id} className="bg-blue-500 p-5 rounded-3xl border">
+              <article
+                key={id}
+                className="bg-blue-500 p-10 rounded-3xl border "
+              >
                 <div className="flex justify-center overflow-hidden mb-10">
                   <Image
                     src={image}
@@ -46,28 +37,23 @@ export default function Projects() {
                     className="rounded-3xl"
                   />
                 </div>
-                <h3 className="flex justify-center mb-10">{title}</h3>
+                <h3 className="flex justify-center mb-10 text-white">
+                  {title}
+                </h3>
                 <div className="flex flex-wrap gap-2 mb-4 justify-center">
-                  <a
-                    href={github}
-                    className="bg-white hover:bg-blue-700 text-blue-500 hover:text-white font-bold py-2 px-4 rounded mx-5"
-                    target=""
-                  >
-                    Github
-                  </a>
-                  <a
+                  <Link
                     href={demo}
                     className="bg-blue-700 hover:bg-blue-900 text-white border border-blue-500 hover:text-white font-semibold py-2 px-4 rounded mx-5 mt"
                     target=""
                   >
-                    Live Demo
-                  </a>
+                    Demo
+                  </Link>
                 </div>
               </article>
             );
           })}
         </div>
       </div>
-    </div>
+    </section>
   );
 }

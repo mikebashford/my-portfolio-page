@@ -7,26 +7,32 @@ import {
 } from "react-icons/ai";
 import { RiMacbookLine } from "react-icons/ri";
 import ThemeSwitcher from "./themeSwitcher";
+import { favicon } from "../../public/favicon.ico";
+import Image from "next/image";
 
 export default function Navbar() {
   return (
-    <nav className="w-screen text-white flex xl:max-2xl:flex-wrap px-12 py-6 z-2 justify-end gap-3 backdrop-filter bg-blue-500 max-lg:flex max-lg:flex-col max-lg:justify-center max-lg: items-center">
+    <nav className="w-full text-white flex xl:max-2xl:flex-wrap px-12 py-6 z-2 justify-end gap-3 backdrop-filter bg-blue-500 max-lg:flex-col max-lg:items-center">
+      <div className="flex items-center me-auto xl:max-2xl:flex-wrap py-2 px-4 hover:text-blue-700 font-bold  text-3xl gap-2 max-lg:me-0">
+        <Image src="/favicon.ico" alt="Brand icon" width={64} height={64} />
+        <h1>Mike Bashford</h1>
+      </div>
       <Link
-        href={"/"}
-        className="flex xl:max-2xl:flex-wrap py-2 px-4 hover:text-blue-700 font-semibold max-lg:flex max-lg:flex-col max-lg:justify-center"
-      >
-        <AiOutlineUser className="mx-1 mt-1 max-lg:self-center" />
-        About Me
-      </Link>
-      <Link
-        href={"/skills"}
+        href={"#skills"}
         className="flex xl:max-2xl:flex-wrap py-2 px-4 hover:text-blue-700 font-semibold max-lg:flex max-lg:flex-col max-lg:justify-center"
       >
         <RiMacbookLine className="mx-1 mt-1 max-lg:self-center" />
         Skills
       </Link>
       <Link
-        href={"/projects"}
+        href={"#about"}
+        className="flex xl:max-2xl:flex-wrap py-2 px-4 hover:text-blue-700 font-semibold max-lg:flex max-lg:flex-col max-lg:justify-center"
+      >
+        <AiOutlineUser className="mx-1 mt-1 max-lg:self-center" />
+        About Me
+      </Link>
+      <Link
+        href={"#projects"}
         className="flex xl:max-2xl:flex-wrap py-2 px-4 hover:text-blue-700 font-semibold max-lg:flex max-lg:flex-col max-lg:justify-center"
       >
         <AiOutlineProject className="mx-1 mt-1 max-lg:self-center" />

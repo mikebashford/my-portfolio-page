@@ -1,44 +1,39 @@
 "use client";
 import Image from "next/image";
-import ProfilePic from "@/app/ui/profile-pic";
+import AboutPic from "@/public/images/about.png";
 
 export default function Page() {
   return (
-    <div className="dark:text-white light:text-black">
-      <div className="block text-center mt-8 my-5 pt-10 overflow-hidden relative">
-        <h3 className="text-2xl my-3">Hello, I am</h3>
-        <h1 className="text-4xl font-bold my-3">Michael Bashford</h1>
-        <h3 className="text-2xl italic my-3">Full stack Developer</h3>
+    <section
+      className="flex flex-row my-24 width-5/5 max-lg:flex-col dark:text-white light:text-black"
+      id="about"
+    >
+      <div className="flex basis-1/4 max-lg:mx-auto">
+        <Image
+          src={AboutPic}
+          alt="Photo of Mike Bashford"
+          width={300}
+          height={300}
+          className="rounded-3xl basis-1/4"
+        />
       </div>
-      <div className="flex justify-center my-10">
-        <a
-          href="https://drive.google.com/file/d/1-b8T7XFgQFl6rcof7krz203Bv2Y25BdM/view?usp=drive_link"
-          className="bg-transparent hover:bg-blue-700 text-blue-500 border border-blue-500 hover:text-white font-semibold py-2 px-4 rounded mx-5"
-        >
-          View CV
-        </a>
-        <a
-          href="/contact"
-          className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mx-5"
-        >
-          Let&apos;s Talk
-        </a>
+      <div className="basis-3/4 width-3/5 max-lg:mx-2 mx-16 self-center max-lg:mt-8">
+        <h1 className="text-5xl font-bold mb-10 flex justify-center">
+          About me
+        </h1>
+        <p className="text-lg ms-10 max-lg:ms-0">
+          Playing video games started my passion for technology. I was
+          introduced to the world of gaming as a child, and I quickly fell in
+          love. This interest led me to pursuing a degree in Game Programming at
+          Alamo Colleges in San Antonio, Texas. To continue this journey I
+          completed a coding bootcamp hosted by The University of Texas at San
+          Antonio and provided by Trilogy. I&apos;m a lifelong learner and find
+          myself constantly drawn to new technologies and frameworks. Attending
+          meetups and online courses keeps me on the cutting edge. Outside of
+          coding I love to travel and explore new places. I&apos;m looking
+          forward to seeing more of the world and learning different cultures.
+        </p>
       </div>
-      <div className="grid grid-flow-row-dense grid-cols-6 grid-rows-1 content-around justify-center mx-4 my-32 max-lg:grid max-lg:grid-flow-row-dense max-lg:grid-cols-1 max-lg:mx-2">
-        <div className="col-span-1 max-lg:hidden"></div>
-        <div className="col-span-3 flex items-center mx-12">
-          <p className="text-left max-xl:mx-8 max-lg:flex max-lg:flex-col max-lg:mx-2 max-lg:items-center">
-            I&apos;m a passionate developer with a knack for building
-            user-centric web applications. My background has instilled a strong
-            focus on efficiency and a love for crafting engaging experiences. I
-            leverage this blend to translate complex ideas into intuitive and
-            delightful user interfaces.
-          </p>
-        </div>
-        <div className="max-lg:col-span-2 max-lg:flex max-lg:flex-col max-lg:mt-10 max-lg:items-center">
-          <ProfilePic />
-        </div>
-      </div>
-    </div>
+    </section>
   );
 }
