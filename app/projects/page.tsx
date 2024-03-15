@@ -22,7 +22,7 @@ export default function Projects() {
           Projects
         </h1>
         <div className="flex my-8 justify-center gap-4">
-          {data.map(({ id, image, title, github, demo }) => {
+          {data.map(({ id, image, title, demo }) => {
             return (
               <article
                 key={id}
