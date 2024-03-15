@@ -1,6 +1,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@layer dark;
+@layer light;
 
 body {
   @apply bg-slate-300;
@@ -12,4 +14,16 @@ section {
 
 p {
   @apply text-lg;
+}
+
+.dark {
+  @apply bg-black text-black;
+}
+
+.light {
+  @apply bg-white text-black;
+}
+
+.dark > section {
+  @apply bg-black;
 }

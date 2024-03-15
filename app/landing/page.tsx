@@ -3,7 +3,7 @@ import ProfilePic from "@/app/ui/profile-pic";
 
 export default function Landing() {
   return (
-    <section className="width-5/5  dark:text-white light:text-black">
+    <section className="width-5/5" id="#">
       <div className="basis-3/4 width-3/5 max-lg:mx-8 mx-16">
         <h1 className="text-5xl font-bold mb-10">Creative & Technical</h1>
         <h2 className="text-3xl font-bold mb-10">

@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function Skills() {
   return (
     <>
-      <section className=" dark:text-white light:text-black">
+      <section className="" id="skills">
         <div className="w-full">
           <h1 className="flex justify-center text-5xl font-bold mb-10">
             Skills

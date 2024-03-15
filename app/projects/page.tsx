@@ -13,10 +13,7 @@ const data = [
 
 export default function Projects() {
   return (
-    <section
-      className="my-24 width-5/5  dark:text-white light:text-black"
-      id="projects"
-    >
+    <section className="my-24 width-5/5" id="projects">
       <div className="w-full">
         <h1 className="flex justify-center font-bold text-5xl mb-10">
           Projects

@@ -5,7 +5,7 @@ import AboutPic from "@/public/images/about.png";
 export default function Page() {
   return (
     <section
-      className="flex flex-row my-24 width-5/5 max-lg:flex-col dark:text-white light:text-black"
+      className="flex flex-row my-24 width-5/5 max-lg:flex-col"
       id="about"
     >
       <div className="flex basis-1/4 max-lg:mx-auto">
