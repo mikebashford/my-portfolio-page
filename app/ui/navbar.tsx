@@ -7,7 +7,7 @@ import {
 } from "react-icons/ai";
 import { RiMacbookLine } from "react-icons/ri";
 import ThemeSwitcher from "./themeSwitcher";
-import { favicon } from "../../public/favicon.ico";
+import { favicon } from "../../public/favicon";
 import Image from "next/image";
 
 export default function Navbar() {
@@ -19,33 +19,35 @@ export default function Navbar() {
       </div>
       <Link
         href={"#skills"}
-        className="flex xl:max-2xl:flex-wrap py-2 px-4 hover:text-blue-700 font-semibold max-lg:flex max-lg:flex-col max-lg:justify-center"
+        className="flex items-center xl:max-2xl:flex-wrap py-2 px-4 hover:text-blue-700 font-semibold max-lg:flex max-lg:flex-col max-lg:justify-center"
       >
         <RiMacbookLine className="mx-1 mt-1 max-lg:self-center" />
         Skills
       </Link>
       <Link
         href={"#about"}
-        className="flex xl:max-2xl:flex-wrap py-2 px-4 hover:text-blue-700 font-semibold max-lg:flex max-lg:flex-col max-lg:justify-center"
+        className="flex items-center xl:max-2xl:flex-wrap py-2 px-4 hover:text-blue-700 font-semibold max-lg:flex max-lg:flex-col max-lg:justify-center"
       >
         <AiOutlineUser className="mx-1 mt-1 max-lg:self-center" />
         About Me
       </Link>
       <Link
         href={"#projects"}
-        className="flex xl:max-2xl:flex-wrap py-2 px-4 hover:text-blue-700 font-semibold max-lg:flex max-lg:flex-col max-lg:justify-center"
+        className="flex items-center xl:max-2xl:flex-wrap py-2 px-4 hover:text-blue-700 font-semibold max-lg:flex max-lg:flex-col max-lg:justify-center"
       >
         <AiOutlineProject className="mx-1 mt-1 max-lg:self-center" />
         Projects
       </Link>
       <Link
         href={"/contact"}
-        className="flex xl:max-2xl:flex-wrap py-2 px-4 hover:text-blue-700 font-semibold max-lg:flex max-lg:flex-col max-lg:justify-center"
+        className="flex items-center xl:max-2xl:flex-wrap py-2 px-4 hover:text-blue-700 font-semibold max-lg:flex max-lg:flex-col max-lg:justify-center"
       >
         <AiOutlineMessage className="mx-1 mt-1 max-lg:self-center" />
         Contact Me
       </Link>
-      <ThemeSwitcher />
+      <div className="flex items-center">
+        <ThemeSwitcher />
+      </div>
     </nav>
   );
 }
