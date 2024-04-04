@@ -1,13 +1,20 @@
 import Image from "next/image";
-import IMG3 from "@/public//images/OneStopGrocer.png";
+import IMG from "@/public//images/OneStopGrocer.png";
+import IMG2 from "@/public//images/playdough.png";
 import Link from "next/link";
 
 const data = [
   {
-    id: 3,
-    image: IMG3,
+    id: 1,
+    image: IMG,
     title: "One Stop Grocer",
     demo: "https://one-stop-grocer.vercel.app/",
+  },
+  {
+    id: 2,
+    image: IMG2,
+    title: "Playdough",
+    demo: "https://playdoughsa.com/",
   },
 ];
 
@@ -18,7 +25,7 @@ export default function Projects() {
         <h1 className="flex justify-center font-bold text-5xl mb-10">
           Projects
         </h1>
-        <div className="flex my-8 justify-center gap-4">
+        <div className="flex my-8 justify-center gap-32">
           {data.map(({ id, image, title, demo }) => {
             return (
               <article
