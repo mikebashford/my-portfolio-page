@@ -3,6 +3,7 @@ import React, { useEffect } from "react";
 import SubmitButton from "@/app/ui/submitButton";
 import { sendEmail } from "@/app/lib/sendEmail";
 import toast from "react-hot-toast";
+import { redirect } from "next/navigation";
 
 export default function Contact() {
   return (
