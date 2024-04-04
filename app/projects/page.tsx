@@ -13,7 +13,7 @@ const data = [
   {
     id: 2,
     image: IMG2,
-    title: "Playdough",
+    title: "Play Dough",
     demo: "https://playdoughsa.com/",
   },
 ];
