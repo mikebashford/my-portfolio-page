@@ -18,21 +18,21 @@ export default function Navbar() {
         <h1>Mike Bashford</h1>
       </div>
       <Link
-        href={"#skills"}
+        href={"/#skills"}
         className="flex items-center xl:max-2xl:flex-wrap py-2 px-4 hover:text-blue-700 font-semibold max-lg:flex max-lg:flex-col max-lg:justify-center"
       >
         <RiMacbookLine className="mx-1 mt-1 max-lg:self-center" />
         Skills
       </Link>
       <Link
-        href={"#about"}
+        href={"/#about"}
         className="flex items-center xl:max-2xl:flex-wrap py-2 px-4 hover:text-blue-700 font-semibold max-lg:flex max-lg:flex-col max-lg:justify-center"
       >
         <AiOutlineUser className="mx-1 mt-1 max-lg:self-center" />
         About Me
       </Link>
       <Link
-        href={"#projects"}
+        href={"/#projects"}
         className="flex items-center xl:max-2xl:flex-wrap py-2 px-4 hover:text-blue-700 font-semibold max-lg:flex max-lg:flex-col max-lg:justify-center"
       >
         <AiOutlineProject className="mx-1 mt-1 max-lg:self-center" />

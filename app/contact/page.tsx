@@ -22,6 +22,7 @@ export default function Contact() {
                 return;
               }
               toast.success("Email sent!");
+              redirect("/");
             }}
           >
             <input
