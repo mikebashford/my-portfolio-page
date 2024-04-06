@@ -11,13 +11,10 @@ export default function Landing() {
           functional.
         </h2>
         <p className="text-lg mb-10">
-          I&apos;m Michael Bashford, a passionate full-stack developer with a
-          knack for crafting user-friendly experiences and building robust
-          back-end systems. I have a strong passion for user experience (UX) and
-          enjoy creating applications that are not only functional but also
-          visually appealing and intuitive to use. I&apos;m a fast learner and a
-          team player, always eager to tackle new challenges and collaborate
-          with talented developers.
+          I&apos;m Michael Bashford, a full-stack developer with a knack for
+          crafting user-friendly experiences and building robust back-end
+          systems. I&apos;m a fast learner and a team player, always eager to
+          tackle new challenges and collaborate with talented developers.
         </p>
         <div className="flex justify-center mb-10">
           <a
