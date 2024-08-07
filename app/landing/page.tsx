@@ -13,12 +13,12 @@ export default function Landing() {
         <p className="text-lg mb-10">
           I&apos;m Michael Bashford, a full-stack developer with a knack for
           crafting user-friendly experiences and building robust back-end
-          systems. I&apos;m a fast learner and a team player, always eager to
-          tackle new challenges and collaborate with talented developers.
+          systems. I&apos;m always eager to tackle new challenges and
+          collaborate with talented developers.
         </p>
         <div className="flex justify-center mb-10">
           <a
-            href="https://drive.google.com/file/d/1-b8T7XFgQFl6rcof7krz203Bv2Y25BdM/view?usp=drive_link"
+            href="https://drive.google.com/file/d/1iHt-2xvkOdOIVOk_c3zcrLOxWaA9ceQl/view?usp=sharing"
             className="bg-transparent hover:bg-blue-700 text-blue-500 border border-blue-500 hover:text-white font-semibold py-2 px-4 rounded mx-5"
           >
             View CV
